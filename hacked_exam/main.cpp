@@ -59,22 +59,22 @@ int main() {
             assert(score[j] >= 0 && score[j] <= q);
         }
 
-        if (n == 1) {
-            if (score[0] <= q / 2) {
-                string flipped;
-                for (auto i : answers[0]) {
-                    flipped.push_back((i == 'T') ? 'F' : 'T');
-                }
-                cout << "Case #" << _ + 1 << ": " << flipped << " "
-                     << q - score[0] << "/"
-                     << "1" << endl;
-            } else {
-                cout << "Case #" << _ + 1 << ": " << answers[0] << " "
-                     << score[0] << "/"
-                     << "1" << endl;
-            }
-            continue;
-        }
+        // if (n == 1) {
+        //     if (score[0] <= q / 2) {
+        //         string flipped;
+        //         for (auto i : answers[0]) {
+        //             flipped.push_back((i == 'T') ? 'F' : 'T');
+        //         }
+        //         cout << "Case #" << _ + 1 << ": " << flipped << " "
+        //              << q - score[0] << "/"
+        //              << "1" << endl;
+        //     } else {
+        //         cout << "Case #" << _ + 1 << ": " << answers[0] << " "
+        //              << score[0] << "/"
+        //              << "1" << endl;
+        //     }
+        //     continue;
+        // }
 
         // if (n == 2) {
         //     int numSame = 0, numDiff = 0;
